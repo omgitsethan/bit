@@ -5,7 +5,3 @@ also stuff for csp :D
 
 ## documentation
 coming soon 👀
-
-## todo
-https://pypi.org/project/colorama/ & https://pypi.org/project/console-menu/
-use this 2 to make the tui ^^
