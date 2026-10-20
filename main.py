@@ -1,12 +1,12 @@
 import requests
-from libs import data
+from libs import data, console
 
 db = data.init()
-username,pat = db[0]
+username, pat = data.get_login()[0]
 
-data.save_login(input("Username, Pat?: ").split(","))
+if username and pat:
+    console.init()
+else:
+    print('not logged in', username,pat,data.get_login())
 
-# headers = {"Authorization": f"Bearer {gitpat}", "Accept": "application/json"}
-# res = requests.get(f"https://api.github.com/users/{username}/repos", headers=headers)
-# for repo in res.json():
-#     print(repo["name"])
+    data.save_login(input("Username, Pat?: ").split(","))

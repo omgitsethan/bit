@@ -1,1 +1,4 @@
 requests
+console-menu
+colorama
+pyfiglet
